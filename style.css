@@ -433,6 +433,189 @@ section .title::after{
 }
 
 
+/* services section styling */
+.training, .teams{
+    color:#fff;
+    background: #111;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    content: "Our Work";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 900px;
+}
+.services .serv-content .card:hover{
+    background: var(--primary-color);
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover .text{
+    color: #cdcdd0;
+}
+.services .serv-content .card:hover i{
+    color: #cdcdd0;
+}
+.services .serv-content .card:hover .tools{
+    background-color: #cdcdd0;
+    color: var(--primary-color);
+}
+.services .serv-content .card:hover .code{
+    background-color: #cdcdd0;
+    color: var(--primary-color);
+}
+.services .serv-content .card:hover .code a{
+    color: var(--primary-color);
+}
+.services .serv-content .card .text{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0 7px 0;
+    color: var(--primary-color);
+
+}
+.services .serv-content .card .code{
+    line-height: 24px ;background-color: var(--primary-color);
+    border-radius: 6px;
+    margin: 10px;
+    width: 50%;
+    margin-left: 80px;
+    padding: 10px 0px;
+}
+.services .serv-content .card .code a{
+    color: #f1f1f1;
+}
+
+.services .serv-content .card p{
+    font-size: 18px;
+    font-weight: 100;
+    margin: 30px 0 7px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.services .serv-content .card .tools{
+    line-height: 24px ;background-color: var(--primary-color);
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.projectimg{
+    width: 300px;
+    padding-top: 10px;
+}
+/* skills section styling */
+
+.train .titles::after{
+    content: "what We done";
+}
+.skills .skills-content .column{
+    width: calc(100% - 3px);
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #352b2b;
+    border-radius: 6px;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.skills .skills-content .right .bars{
+    margin: 10px 10px;
+
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* Team Section Styling */
+.team {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #3498db;
+}
+
+.team-member p {
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
